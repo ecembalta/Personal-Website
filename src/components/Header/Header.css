@@ -1,0 +1,94 @@
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: "Inter", serif;
+    margin: 2.8rem 0;
+}
+
+.header-description {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.title-with-divider {
+    display: flex;
+    align-items: center; /* Dikeyde ortala */
+    color: #4338ca;
+  }
+
+  .title-with-divider h6 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+  
+  .divider {
+    width: 50px; /* Divider'ın genişliği */
+    height: 1px; /* Divider'ın kalınlığı */
+    background-color: #4338ca; /* Divider'ın rengi */
+    margin-right: 10px; /* Başlık ile arasındaki boşluk */
+  }
+
+
+.header-description h2 {
+  margin: 0;
+  padding-top: 30px;
+  font-size: 72px;
+  text-align: left;
+}
+
+.header-description p {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: left;
+  color: #6B7280;
+}
+
+.social-media-icons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+}
+
+.social-media-icons a {
+  border: 1px solid #3730a3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #3730a3;
+  width: 140px;
+  justify-content: center;
+}
+
+.social-media-icons a:first-child {
+  background-color: #3730a3;
+  color: white;
+}
+
+.header-image {
+    width: 45%;
+    height: 100%;
+    padding:50px 0;
+    display: block; 
+    object-fit: cover;
+    border-radius: 18px;
+
+  }
+
+  .header-image img{
+    width: 100%;
+    height: 100%;
+  }

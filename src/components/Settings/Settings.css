@@ -1,0 +1,68 @@
+#settings-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Inter", serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.setting-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  height: 24px; 
+  color: #777777;
+}
+
+.custom-switch.form-check {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-check-label {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.separator {
+  color: #777777;
+  font-size: 1.2em;
+}
+
+.custom-switch .form-check-input:checked {
+  background-color: #4747ff; 
+  border-color: #4747ff;
+}
+
+.custom-switch .form-check-input {
+  background-color: #e9ecef; 
+  border-color: #e9ecef;
+  cursor: pointer;
+}
+
+.custom-switch .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(71, 71, 255, 0.25); 
+  border-color: #4747ff;
+}
+
+.form-check-label {
+  color: #777777;
+  cursor: pointer;
+}
+
+.language-button {
+  background: none;
+  border: none;
+  color: #4747ff;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+.language-button:focus {
+  outline: none;
+}
