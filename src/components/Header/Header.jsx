@@ -1,7 +1,7 @@
 import React from "react";
 import headerImage from "../../assets/header-image.png";
 import githubIcon from "../../assets/github.png";
-import linkedinIcon from "../../assets/linkedin.png";
+import linkedinIcon from "../../assets/LinkedIn.png";
 import "./Header.css";
 function Header() {
   return (
@@ -13,9 +13,9 @@ function Header() {
         </div>
         <h2>Creative thinker Minimalism lover</h2>
         <p>
-          Hi, I’m Ecem. I’m a full-stack developer. If you are looking for a
+          Hi, I'm Ecem. I'm a full-stack developer. If you are looking for a
           Developer who to craft solid and scalable frontend products with great
-          user experiences. Let’s shake hands with me.
+          user experiences. Let's shake hands with me.
         </p>
         <div className="social-media-icons">
           <a href="/">Hire Me</a>
