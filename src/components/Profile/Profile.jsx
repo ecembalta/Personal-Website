@@ -1,5 +1,6 @@
 import React from "react";
 import "./Profile.css";
+import { useSelector } from "react-redux";
 
 const data = [
   {
@@ -25,11 +26,12 @@ const data = [
 ];
 
 function Profile() {
+  const darkMode = useSelector((state) => state.darkMode.darkMode);
   return (
-    <div id="profile-container">
+    <div id="profile-container" className={`${darkMode ? "dark" : ""}`}>
       <h2>Profile</h2>
-      <div className="profile-content">
-        <div className="profile-items">
+      <div className="profile-grid">
+        <div className="profile-card">
           <h3>Profile</h3>
           {data.map((item, index) => (
             <div key={index} className="profile-item">
@@ -38,7 +40,7 @@ function Profile() {
             </div>
           ))}
         </div>
-        <div className="about-me">
+        <div className="profile-card">
           <h3>About Me</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam

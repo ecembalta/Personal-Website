@@ -39,3 +39,8 @@ a.active-link {
     border-radius: 10px;
     padding: 5px 15px;   
 }
+
+.dark .active-link {
+    color: #6b6bff;
+    border: 1px solid #6b6bff;
+}

@@ -1,16 +1,22 @@
 import React from "react";
 import "./Navigate.css";
-
+import { useSelector } from "react-redux";
 
 function Navigate() {
-  return <div id="navigate-container">
-    <div className="navigate-logo">E</div>
-    <div className="navigate-links">
-      <a href="#">Skills</a>
-      <a href="#">Projects</a>
-      <a className="active-link" href="#">Hire Me</a>
+  const darkMode = useSelector((state) => state.darkMode.darkMode);
+
+  return (
+    <div id="navigate-container">
+      <div className="navigate-logo">E</div>
+      <div className="navigate-links">
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+        <a className={`active-link ${darkMode ? "dark" : ""}`} href="#">
+          Hire Me
+        </a>
+      </div>
     </div>
-  </div>;
+  );
 }
 
 export default Navigate;

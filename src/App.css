@@ -6,11 +6,12 @@
   align-items: center;
   width: 100%;
   font-family: 'Inter', sans-serif;
+  min-height: 100vh;
 }
 
 .container {
   max-width: 1280px;
-  padding: 2rem 5rem;
+  padding: 2rem 2rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -53,3 +54,33 @@
 .read-the-docs {
   color: #888;
 }
+
+.app {
+  transition: all 0.3s ease;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.dark {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark #root {
+  background-color: #333333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.dark body {
+  background-color: #333333;
+}
+

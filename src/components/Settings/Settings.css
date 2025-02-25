@@ -66,3 +66,24 @@
 .language-button:focus {
   outline: none;
 }
+
+.dark .setting-item {
+  color: #ffffff;
+}
+
+.dark .form-check-label {
+  color: #ffffff;
+}
+
+.dark .separator {
+  color: #ffffff;
+}
+
+.dark .custom-switch .form-check-input {
+  background-color: #555555;
+  border-color: #555555;
+}
+
+.dark .language-button {
+  color: #6b6bff;
+}

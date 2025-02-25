@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css";
-
+import { useSelector } from "react-redux";
 import project1 from "../../assets/projects1.png";
 import project2 from "../../assets/projects2.png";
 import project3 from "../../assets/projects3.png";
@@ -33,12 +33,13 @@ const projects = [
 ];
 
 function Projects() {
+  const darkMode = useSelector((state) => state.darkMode.darkMode);
   return (
-    <div id="projects-container">
+    <div id="projects-container" className={`${darkMode ? "dark" : ""}`}>
       <h2>Projects</h2>
-      <div className="projects-content">
+      <div className="projects-grid">
         {projects.map((project) => (
-          <div className="projects-items">
+          <div className="project-card">
             <div className="project-details">
               <img src={project.image} alt={project.title} />
               <h4>{project.title}</h4>

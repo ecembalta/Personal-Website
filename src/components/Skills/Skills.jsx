@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Skills.css";
-
+import { useSelector } from "react-redux";
 const skills = [
   {
     id: 1,
@@ -23,8 +23,10 @@ const skills = [
 ];
 
 function Skills() {
+  const darkMode = useSelector((state) => state.darkMode.darkMode);
+
   return (
-    <div id="skills-container">
+    <div id="skills-container" className={`${darkMode ? "dark" : ""}`}>
       <h2>Skills</h2>
       <div className="skills-grid">
         {skills.map((skill) => (
