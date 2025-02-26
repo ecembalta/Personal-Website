@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Label, Input, Form, FormGroup } from "reactstrap";
 import { useSelector, useDispatch } from "react-redux";
 import { setLanguage } from "../../redux/actions/languageActions";
+import { toggleDarkMode } from "../../redux/actions/darkModeActions";
 import { translations } from "../../data/translations";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -22,7 +23,7 @@ function Settings() {
 
   const handleDarkModeChange = (event) => {
     const isChecked = event.target.checked;
-    dispatch({ type: "SET_DARK_MODE", payload: isChecked });
+    dispatch(toggleDarkMode(isChecked));
     toast.success(isChecked ? texts.darkModeEnabled : texts.darkModeDisabled, {
       position: "bottom-right",
       autoClose: 2000,

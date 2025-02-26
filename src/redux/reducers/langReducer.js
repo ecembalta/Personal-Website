@@ -2,9 +2,6 @@ import { SET_LANGUAGE } from "../actions/languageActions";
 
 const initialState = {
   language: localStorage.getItem("language") || "tr",
-  isLoading: false,
-  error: null,
-  apiData: null,
 };
 
 const reducer = (state = initialState, action) => {
