@@ -1,39 +1,20 @@
 import React from "react";
 import "./Profile.css";
 import { useSelector } from "react-redux";
-
-const data = [
-  {
-    id: 1,
-    title: "Doğum tarihi",
-    description: "29.07.1995",
-  },
-  {
-    id: 2,
-    title: "İkamet Şehri",
-    description: "İzmir",
-  },
-  {
-    id: 3,
-    title: "Eğitim Durumu",
-    description: "Dokuz Eylül Ünv. Elektrik-Elektronik Müh. - 2019",
-  },
-  {
-    id: 4,
-    title: "Tercih Ettiği Rol",
-    description: "Frontend Developer",
-  },
-];
+import { translations } from "../../data/translations";
 
 function Profile() {
   const darkMode = useSelector((state) => state.darkMode.darkMode);
+  const currentLanguage = useSelector((state) => state.language.language);
+  const texts = translations[currentLanguage];
+
   return (
     <div id="profile-container" className={`${darkMode ? "dark" : ""}`}>
-      <h2>Profile</h2>
+      <h2>{texts.profile}</h2>
       <div className="profile-grid">
         <div className="profile-card">
-          <h3>Profile</h3>
-          {data.map((item, index) => (
+          <h3>{texts.profile}</h3>
+          {texts.profileData.map((item, index) => (
             <div key={index} className="profile-item">
               <h4>{item.title}</h4>
               <p>{item.description}</p>
@@ -41,15 +22,8 @@ function Profile() {
           ))}
         </div>
         <div className="profile-card">
-          <h3>About Me</h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-            aut, odit laborum aliquam voluptatum nisi mollitia.
-          </p>
-          <p>
-            Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod
-            deserunt quam temporibus cumque magnam!
-          </p>
+          <h3>{texts.aboutMe}</h3>
+          <p>{texts.aboutMeDescription}</p>
         </div>
       </div>
     </div>

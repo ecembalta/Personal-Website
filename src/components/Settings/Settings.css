@@ -60,12 +60,11 @@
   color: #4747ff;
   cursor: pointer;
   padding: 0;
+  width: 165px;
+  text-align: right;
+  display: inline-block;
 }
 
-
-.language-button:focus {
-  outline: none;
-}
 
 .dark .setting-item {
   color: #ffffff;

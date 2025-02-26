@@ -28,10 +28,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: space-between;
     background: #fff;
     border-radius: 8px;
     padding: 1.5rem;
+    height: 530px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -43,11 +44,24 @@
     margin: 1rem 0;
 }
 
-.project-card p{
+.project-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.project-card p {
     font-size: 14px;
     color: #6B7280;
     text-align: justify;
     line-height: 1.3;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin-bottom: 1rem;
+    flex: 1;
 }
 
 .project-card img {
@@ -64,12 +78,13 @@
     align-items: center;
     justify-content: flex-start;
     gap: 0.5rem;
+    margin-top: auto;
 }
 
 .project-card .skills span{
     border: 1px solid #3730a3;
     border-radius: 5px;
-    width: 70px;
+    width: 100%;
     height: 30px;
     text-align: center;
     padding-top: 0.2rem;
@@ -78,7 +93,7 @@
 }
 
 .project-links{
-    margin-top: 0.8rem;
+    margin-top: 1rem;
     width: 100%;
     display: flex;
     flex-direction: row;

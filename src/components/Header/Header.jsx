@@ -6,9 +6,12 @@ import linkedinDarkIcon from "../../assets/LinkedIn-dark.png";
 import linkedinLightIcon from "../../assets/LinkedIn-light.png";
 import "./Header.css";
 import { useSelector } from "react-redux";
+import { translations } from "../../data/translations";
 
 function Header() {
   const darkMode = useSelector((state) => state.darkMode.darkMode);
+  const currentLanguage = useSelector((state) => state.language.language);
+  const texts = translations[currentLanguage];
 
   return (
     <div id="header-container">
@@ -17,14 +20,10 @@ function Header() {
           <span className="divider"></span>
           <h6>Ecem Nur Çetin</h6>
         </div>
-        <h2>Creative thinker Minimalism lover</h2>
-        <p>
-          Hi, I'm Ecem. I'm a full-stack developer. If you are looking for a
-          Developer who to craft solid and scalable frontend products with great
-          user experiences. Let's shake hands with me.
-        </p>
+        <h2>{texts.headerTitle}</h2>
+        <p>{texts.headerDescription}</p>
         <div className={`social-media-icons ${darkMode ? "dark" : ""}`}>
-          <a href="/">Hire Me</a>
+          <a href="/">{texts.hireMe}</a>
           {darkMode ? (
             <a href="/">
               <img src={githubDarkIcon} alt="github" />
