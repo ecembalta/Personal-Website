@@ -93,6 +93,8 @@ export const translations = {
     darkMode: "KOYU MOD",
     darkModeOn: "AÇIK",
     darkModeOff: "KAPALI",
+    darkModeEnabled: "Koyu mod aktifleştirildi",
+    darkModeDisabled: "Koyu mod devre dışı bırakıldı",
     languageSwitch: "SWITCH TO ENGLISH",
   },
   en: {
@@ -192,6 +194,8 @@ export const translations = {
     darkMode: "DARK MODE",
     darkModeOn: "ON",
     darkModeOff: "OFF",
+    darkModeEnabled: "Dark mode enabled",
+    darkModeDisabled: "Dark mode disabled",
     languageSwitch: "TÜRKÇE'YE GEÇ",
   },
 };
